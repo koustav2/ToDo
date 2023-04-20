@@ -59,7 +59,7 @@ function App() {
       <div className="responsive flex w-[100%] justify-evenly border-b-2 border-indigo-500 p-2">
         <button
           id="all"
-          className={`status-buttons ${isAllSelected ? "selected" : ""}`}
+          className={`status ${isAllSelected ? "selected" : ""}`}
           onClick={() => {
             setIsAllSelected(true);
             setIsActiveSelected(false);
@@ -70,7 +70,7 @@ function App() {
         </button>
         <button
           id="active"
-          className={`status-buttons ${isActiveSelected ? "selected" : ""}`}
+          className={`status ${isActiveSelected ? "selected" : ""}`}
           onClick={() => {
             setIsActiveSelected(true);
             setIsAllSelected(false);
@@ -81,7 +81,7 @@ function App() {
         </button>
         <button
           id="completed"
-          className={`status-buttons ${isCompletedSelected ? "selected" : ""}`}
+          className={`status ${isCompletedSelected ? "selected" : ""}`}
           onClick={() => {
             setIsCompletedSelected(true);
             setIsAllSelected(false);
@@ -92,7 +92,7 @@ function App() {
         </button>
       </div>
       {!isCompletedSelected && (
-        <form className="add-task-container">
+        <form className="task-container">
           <input
             id="add-details"
             placeholder="Add a new task..."
@@ -139,7 +139,7 @@ function App() {
               </span>
               {isCompletedSelected && task.completed && (
                 <div
-                  className="delete"
+                  className="delete-icon-container"
                   onClick={() => deleteSingleTask(task)}
                 >
                   <span className="material-icons delete-icon">
@@ -154,11 +154,11 @@ function App() {
       {!noCompletedTasks && isCompletedSelected && (
         <button
           id="delete-all"
-          className="all-button"
+          className="delete-all-button"
           onClick={() => deleteAllTasks()}
         >
           <span className="material-icons delete-icon">delete_outline</span>
-          <span className="all-button-text">delete all</span>
+          <span className="delete-all-button-text">delete all</span>
         </button>
       )}
 

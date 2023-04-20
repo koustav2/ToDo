@@ -34,7 +34,7 @@ button {
 
 }
 
-.status-buttons {
+.status {
   background-color: transparent;
   border: none;
   padding: 12px;
@@ -43,11 +43,11 @@ button {
   min-width: 89px;
 }
 
-.status-buttons.selected {
+.status.selected {
   border-bottom: 4px solid #2f80ed;
 }
 
-.add-task-container {
+.task-container {
   margin: 3% 0;
   display: flex;
   flex-direction: row;
@@ -142,7 +142,7 @@ button {
     display: flex;
     flex-direction: column;
   }
-  .add-task-container {
+  .task-container {
     justify-content: space-around;
   }
   .input-details {
