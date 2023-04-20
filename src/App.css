@@ -111,7 +111,7 @@ button {
   display: none;
 }
 
-.delete-icon-container {
+.delete {
   margin-left: auto;
   padding: 2% 2px;
   color: #bdbdbd;
@@ -122,7 +122,7 @@ button {
   align-self: center;
 }
 
-.delete-all-button {
+.all-button {
   padding: 1.5% 3%;
   background: #eb5757;
   border: none;
@@ -131,7 +131,7 @@ button {
   display: flex;
   float: right;
 }
-.delete-all-button-text {
+.all-button-text {
   align-self: center;
   padding: 0 2px;
 }

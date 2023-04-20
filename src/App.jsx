@@ -139,7 +139,7 @@ function App() {
               </span>
               {isCompletedSelected && task.completed && (
                 <div
-                  className="delete-icon-container"
+                  className="delete"
                   onClick={() => deleteSingleTask(task)}
                 >
                   <span className="material-icons delete-icon">
@@ -154,11 +154,11 @@ function App() {
       {!noCompletedTasks && isCompletedSelected && (
         <button
           id="delete-all"
-          className="delete-all-button"
+          className="all-button"
           onClick={() => deleteAllTasks()}
         >
           <span className="material-icons delete-icon">delete_outline</span>
-          <span className="delete-all-button-text">delete all</span>
+          <span className="all-button-text">delete all</span>
         </button>
       )}
 
