@@ -55,7 +55,7 @@ button {
   justify-content: space-between;
 }
 
-.input-details {
+.input {
   width: 80%;
   height: 56px;
   border: 1px solid #bdbdbd;
@@ -145,7 +145,7 @@ button {
   .task-container {
     justify-content: space-around;
   }
-  .input-details {
+  .input {
     margin: 2%;
   }
   .task-item{

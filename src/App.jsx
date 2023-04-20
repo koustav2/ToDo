@@ -96,7 +96,7 @@ function App() {
           <input
             id="add-details"
             placeholder="Add a new task..."
-            className="input-details"
+            className="input"
           ></input>
           <button
             id="add-task"
